@@ -1,0 +1,100 @@
+[
+  {
+    "text": "Guides",
+    "items": [
+      {
+        "text": "Overview",
+        "as": "/guides/overview",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Deploying",
+        "as": "/guides/deploying",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Teams",
+        "as": "/guides/teams",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Environments",
+        "as": "/guides/environments",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Routing",
+        "as": "/guides/routing",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Caching",
+        "as": "/guides/caching",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Prefetching",
+        "as": "/guides/prefetching",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Split Testing",
+        "as": "/guides/split_testing",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "CLI",
+        "as": "/guides/cli",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Production",
+        "as": "/guides/production",
+        "href": "/guides/[...guide]"
+      }
+    ]
+  },
+  {
+    "text": "Web Frameworks",
+    "items": [
+      {
+        "text": "Next.js",
+        "icon": "react",
+        "as": "/guides/next",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Nuxt.js",
+        "icon": "vue",
+        "as": "/guides/nuxt",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Angular",
+        "icon": "angular",
+        "as": "/guides/angular",
+        "href": "/guides/[...guide]"
+      }
+    ]
+  },
+  {
+    "text": "Reference",
+    "items": [
+      {
+        "text": "xdn.config.js",
+        "as": "/guides/xdn_config",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Status Codes",
+        "as": "/guides/status_codes",
+        "href": "/guides/[...guide]"
+      },
+      {
+        "text": "Response Headers",
+        "as": "/guides/response_headers",
+        "href": "/guides/[...guide]"
+      }
+    ]
+  }
+]
