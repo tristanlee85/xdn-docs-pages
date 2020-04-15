@@ -1,3 +1,0 @@
-# Split Testing
-
-Coming soon.
