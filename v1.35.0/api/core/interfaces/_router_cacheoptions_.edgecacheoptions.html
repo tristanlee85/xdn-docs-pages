@@ -1,0 +1,300 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>EdgeCacheOptions | @xdn/core - v1.35.0</title>
+	<meta name="description" content="Documentation for @xdn/core - v1.35.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@xdn/core - v1.35.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_router_cacheoptions_.html">&quot;router/CacheOptions&quot;</a>
+				</li>
+				<li>
+					<a href="_router_cacheoptions_.edgecacheoptions.html">EdgeCacheOptions</a>
+				</li>
+			</ul>
+			<h1>Interface EdgeCacheOptions</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Options for controlling caching behavior at edge</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">EdgeCacheOptions</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_router_cacheoptions_.edgecacheoptions.html#forceprivatecaching" class="tsd-kind-icon">force<wbr>Private<wbr>Caching</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_router_cacheoptions_.edgecacheoptions.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_router_cacheoptions_.edgecacheoptions.html#maxageseconds" class="tsd-kind-icon">max<wbr>Age<wbr>Seconds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_router_cacheoptions_.edgecacheoptions.html#stalewhilerevalidateseconds" class="tsd-kind-icon">stale<wbr>While<wbr>Revalidate<wbr>Seconds</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="forceprivatecaching" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> force<wbr>Private<wbr>Caching</h3>
+					<div class="tsd-signature tsd-kind-icon">force<wbr>Private<wbr>Caching<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Allows you to force caching of responses marked as <code>private</code> in their <code>cache-control</code> header.
+							This option must be used with utmost care to avoid leaking private information.</p>
+						</div>
+						<p><strong>Example</strong></p>
+						<pre><code class="language-js"> <span class="hljs-keyword">import</span> { Router, CustomCacheKey } <span class="hljs-keyword">from</span> <span class="hljs-string">'@xdn/core/router'</span>
+
+ <span class="hljs-keyword">new</span> Router()
+   .match(<span class="hljs-string">'/private/path'</span>, ({ cache }) =&gt; {
+     cache({
+       <span class="hljs-attr">edge</span>: {
+         <span class="hljs-attr">maxAgeSeconds</span>: <span class="hljs-number">60</span> * <span class="hljs-number">60</span>,
+         <span class="hljs-attr">key</span>: <span class="hljs-keyword">new</span> CustomCacheKey()
+           .addCookie(<span class="hljs-string">'session'</span>),
+         <span class="hljs-attr">forcePrivateCaching</span>: <span class="hljs-literal">true</span>,
+       }
+     })
+   })</code></pre>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="key" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> key</h3>
+					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <a href="../classes/_router_customcachekey_.customcachekey.html" class="tsd-signature-type">CustomCacheKey</a></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Allows you to split or normalize the cache space for a given route. Common use cases include:</p>
+						</div>
+						<ul>
+							<li>serving multiple variants of the same URL based on a currency and/or language cookie.</li>
+							<li>caching different responses based on device type</li>
+							<li>ignoring all but a specific set of query parameters when looking up a response from the cache.</li>
+						</ul>
+						<p><strong>Example</strong></p>
+						<pre><code class="language-js"> <span class="hljs-keyword">import</span> { Router, CustomCacheKey } <span class="hljs-keyword">from</span> <span class="hljs-string">'@xdn/core/router'</span>
+
+ <span class="hljs-keyword">new</span> Router()
+   .match(<span class="hljs-string">'/some-path'</span>, ({ cache }) =&gt; {
+     cache({
+       <span class="hljs-attr">edge</span>: {
+         <span class="hljs-attr">maxAgeSeconds</span>: <span class="hljs-number">60</span> * <span class="hljs-number">60</span>,
+         <span class="hljs-attr">key</span>: <span class="hljs-keyword">new</span> CustomCacheKey()
+           .excludeAllQueryParametersExcept(<span class="hljs-string">'color'</span>, <span class="hljs-string">'size'</span>)
+           .addCookie(<span class="hljs-string">'currency'</span>)
+           .addCookie(<span class="hljs-string">'location'</span>, cookie =&gt; {
+             cookie.group(<span class="hljs-string">'na'</span>).byPattern(<span class="hljs-string">'us|ca'</span>)
+             cookie.group(<span class="hljs-string">'eur'</span>).byPattern(<span class="hljs-string">'de|fr|ee'</span>)
+           })
+       }
+     })
+   })</code></pre>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxageseconds" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Age<wbr>Seconds</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Age<wbr>Seconds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The maximum number of seconds that a response is served from the cache until it is
+								considered stale. Unless <code>staleWhileRevalidate</code> is specified, stale responses will
+							not be returned to the browser.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="stalewhilerevalidateseconds" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stale<wbr>While<wbr>Revalidate<wbr>Seconds</h3>
+					<div class="tsd-signature tsd-kind-icon">stale<wbr>While<wbr>Revalidate<wbr>Seconds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Extends the duration that a response will be served from the cache after it has become stale.
+								When using staleWhileRevalidate, if the XDN receives a request for a stale asset, the cached
+								response will be served and a fresh response will be concurrently fetch so that it can be served
+							for future requests. The stale response will continue to be served until the fresh fetched.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_config_.html">&quot;config&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_deploy_deploymentbuilder_.html">&quot;deploy/<wbr>Deployment<wbr>Builder&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_deploy_index_.html">&quot;deploy/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_deploy_resolveinpackage_.html">&quot;deploy/resolve<wbr>InPackage&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_router_cacheoptions_.html">&quot;router/<wbr>Cache<wbr>Options&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_customcachekey_.html">&quot;router/<wbr>Custom<wbr>Cache<wbr>Key&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_request_.html">&quot;router/<wbr>Request&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_response_.html">&quot;router/<wbr>Response&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_responsewriter_.html">&quot;router/<wbr>Response<wbr>Writer&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_router_.html">&quot;router/<wbr>Router&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_index_.html">&quot;router/index&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_router_cacheoptions_.browsercacheoptions.html" class="tsd-kind-icon">Browser<wbr>Cache<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_router_cacheoptions_.cacheoptions.html" class="tsd-kind-icon">Cache<wbr>Options</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="_router_cacheoptions_.edgecacheoptions.html" class="tsd-kind-icon">Edge<wbr>Cache<wbr>Options</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_router_cacheoptions_.edgecacheoptions.html#forceprivatecaching" class="tsd-kind-icon">force<wbr>Private<wbr>Caching</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_router_cacheoptions_.edgecacheoptions.html#key" class="tsd-kind-icon">key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_router_cacheoptions_.edgecacheoptions.html#maxageseconds" class="tsd-kind-icon">max<wbr>Age<wbr>Seconds</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_router_cacheoptions_.edgecacheoptions.html#stalewhilerevalidateseconds" class="tsd-kind-icon">stale<wbr>While<wbr>Revalidate<wbr>Seconds</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
