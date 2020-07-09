@@ -1,0 +1,1491 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ResponseWriter | @xdn/core - v1.38.0</title>
+	<meta name="description" content="Documentation for @xdn/core - v1.38.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@xdn/core - v1.38.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_router_responsewriter_.html">&quot;router/ResponseWriter&quot;</a>
+				</li>
+				<li>
+					<a href="_router_responsewriter_.responsewriter.html">ResponseWriter</a>
+				</li>
+			</ul>
+			<h1>Class ResponseWriter</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The API that is provided to route callbacks.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">BaseResponseWriter</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ResponseWriter</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_router_responsewriter_.responsewriter.html#request" class="tsd-kind-icon">request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_router_responsewriter_.responsewriter.html#response" class="tsd-kind-icon">response</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_router_responsewriter_.responsewriter.html#route" class="tsd-kind-icon">route</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#addresponsecookie" class="tsd-kind-icon">add<wbr>Response<wbr>Cookie</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#addupstreamresponsecookie" class="tsd-kind-icon">add<wbr>Upstream<wbr>Response<wbr>Cookie</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#allowcors" class="tsd-kind-icon">allow<wbr>Cors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#cache" class="tsd-kind-icon">cache</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#proxy" class="tsd-kind-icon">proxy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#redirect" class="tsd-kind-icon">redirect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#removerequestheader" class="tsd-kind-icon">remove<wbr>Request<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#removeresponsecookie" class="tsd-kind-icon">remove<wbr>Response<wbr>Cookie</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#removeresponseheader" class="tsd-kind-icon">remove<wbr>Response<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#removeupstreamresponsecookie" class="tsd-kind-icon">remove<wbr>Upstream<wbr>Response<wbr>Cookie</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#removeupstreamresponseheader" class="tsd-kind-icon">remove<wbr>Upstream<wbr>Response<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#render" class="tsd-kind-icon">render</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#send" class="tsd-kind-icon">send</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#servestatic" class="tsd-kind-icon">serve<wbr>Static</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#serviceworker" class="tsd-kind-icon">service<wbr>Worker</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#setrequestheader" class="tsd-kind-icon">set<wbr>Request<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#setresponseheader" class="tsd-kind-icon">set<wbr>Response<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#setupstreamresponseheader" class="tsd-kind-icon">set<wbr>Upstream<wbr>Response<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#updaterequestheader" class="tsd-kind-icon">update<wbr>Request<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#updateresponsecookie" class="tsd-kind-icon">update<wbr>Response<wbr>Cookie</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#updateresponseheader" class="tsd-kind-icon">update<wbr>Response<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#updateupstreamresponsecookie" class="tsd-kind-icon">update<wbr>Upstream<wbr>Response<wbr>Cookie</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_router_responsewriter_.responsewriter.html#updateupstreamresponseheader" class="tsd-kind-icon">update<wbr>Upstream<wbr>Response<wbr>Header</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Response<wbr>Writer<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_request_.request.html" class="tsd-signature-type">Request</a>, res<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_response_.response.html" class="tsd-signature-type">Response</a>, route<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Route</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_router_responsewriter_.responsewriter.html" class="tsd-signature-type">ResponseWriter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.__constructor</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <a href="../interfaces/_router_request_.request.html" class="tsd-signature-type">Request</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The request</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>res: <a href="../interfaces/_router_response_.response.html" class="tsd-signature-type">Response</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The response</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>route: <span class="tsd-signature-type">Route</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The route</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_router_responsewriter_.responsewriter.html" class="tsd-signature-type">ResponseWriter</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="request" class="tsd-anchor"></a>
+					<h3>request</h3>
+					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_router_request_.request.html" class="tsd-signature-type">Request</a></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="response" class="tsd-anchor"></a>
+					<h3>response</h3>
+					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_router_response_.response.html" class="tsd-signature-type">Response</a></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="route" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> route</h3>
+					<div class="tsd-signature tsd-kind-icon">route<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Route</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="addresponsecookie" class="tsd-anchor"></a>
+					<h3>add<wbr>Response<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Response<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.addResponseCookie</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a <code>set-cookie</code> header to the response.
+									This does not replace any cookies with the same name - for that you should use <code>updateResponseCookie</code>.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ addUpstreamResponseCookie,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     addResponseCookie(<span class="hljs-string">'my-cookie'</span>, <span class="hljs-string">'my-cookie-value'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Name of the cookie to add.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value to set</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="addupstreamresponsecookie" class="tsd-anchor"></a>
+					<h3>add<wbr>Upstream<wbr>Response<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Upstream<wbr>Response<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.addUpstreamResponseCookie</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a <code>set-cookie</code> header to the response before attempting to cache the response.
+										This does not replace any cookies with the same name - for that you should use <code>updateUpstreamResponseCookie</code>.
+										Furthermore, XDN does not cache responses with <code>set-cookie</code> so if you wish to add a cookie
+									<em>after</em> the response is cached, you should use <code>setResponseCookie</code>.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ addUpstreamResponseCookie,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     addUpstreamResponseCookie(<span class="hljs-string">'my-cookie'</span>, <span class="hljs-string">'my-cookie-value'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Name of the cookie to add.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value to set</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="allowcors" class="tsd-anchor"></a>
+					<h3>allow<wbr>Cors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">allow<wbr>Cors<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_router_responsewriter_.corsoptions.html" class="tsd-signature-type">CorsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.allowCors</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sends the necessary response headers to allow CORS</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> config: <a href="../interfaces/_router_responsewriter_.corsoptions.html" class="tsd-signature-type">CorsOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p><strong>Example</strong></p>
+											<pre><code class="language-js"> <span class="hljs-keyword">new</span> Router()
+   .match(<span class="hljs-string">'/api/*path'</span>, ({ allowCors }) =&gt; {
+     allowCors({
+       <span class="hljs-attr">origin</span>: <span class="hljs-string">'*'</span>, <span class="hljs-comment">// this is the default</span>
+       <span class="hljs-attr">methods</span>: [<span class="hljs-string">'get'</span>, <span class="hljs-string">'post'</span>],
+       <span class="hljs-attr">headers</span>: [<span class="hljs-string">'x-some-header'</span>],
+       <span class="hljs-attr">maxAge</span>: <span class="hljs-number">60</span> * <span class="hljs-number">60</span>, <span class="hljs-comment">// one hour</span>
+       <span class="hljs-attr">credentials</span>: <span class="hljs-literal">true</span>
+     })
+   })</code></pre>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="cache" class="tsd-anchor"></a>
+					<h3>cache</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_cacheoptions_.cacheoptions.html" class="tsd-signature-type">CacheOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.cache</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the caching behavior for both browser and edge.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> <span class="hljs-string">new</span> <span class="hljs-string">Router()</span>
+   <span class="hljs-string">.get('/p/:productId',</span> <span class="hljs-string">({</span> <span class="hljs-string">cache,</span> <span class="hljs-string">proxy</span> <span class="hljs-string">})</span> <span class="hljs-string">=&gt;</span> <span class="hljs-string">{</span>
+     <span class="hljs-string">cache({</span>
+       <span class="hljs-attr">browser:</span> <span class="hljs-string">{</span>
+         <span class="hljs-attr">maxAgeSeconds:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span>
+         <span class="hljs-attr">serviceWorkerSeconds:</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">60</span><span class="hljs-string">,</span> <span class="hljs-string">//</span> <span class="hljs-number">1</span> <span class="hljs-string">hour</span>
+       <span class="hljs-string">},</span>
+       <span class="hljs-attr">edge:</span> <span class="hljs-string">{</span>
+         <span class="hljs-attr">maxAgeSeconds:</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">24</span> <span class="hljs-string">//</span> <span class="hljs-number">24</span> <span class="hljs-string">hours</span>
+         <span class="hljs-attr">staleWhileRevalidateSeconds:</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">60</span> <span class="hljs-string">//</span> <span class="hljs-number">1</span> <span class="hljs-string">hour</span>
+       <span class="hljs-string">}</span>
+     <span class="hljs-string">})</span>
+     <span class="hljs-string">proxy('origin')</span>
+   <span class="hljs-string">})</span></code></pre><p>The <code>cache()</code> method can be called in the same route where the response is sent, or any prior route.  For example,
+									with Next.js, it is common to use the next plugin to automatically inherit page routes based on Next.js conventions,
+								and use the XDN router simply to add caching:</p>
+								<pre><code> <span class="hljs-string">import</span> <span class="hljs-string">{</span> <span class="hljs-string">Router</span> <span class="hljs-string">}</span> <span class="hljs-string">=</span> <span class="hljs-string">from</span> <span class="hljs-string">'@xdn/core/router'</span>
+ <span class="hljs-string">import</span> <span class="hljs-string">{</span> <span class="hljs-string">createNextPlugin</span> <span class="hljs-string">}</span> <span class="hljs-string">from</span> <span class="hljs-string">'@xdn/next'</span>
+
+ <span class="hljs-string">const</span> <span class="hljs-string">{</span> <span class="hljs-string">nextMiddleware,</span> <span class="hljs-string">renderNext</span> <span class="hljs-string">}</span> <span class="hljs-string">=</span> <span class="hljs-string">createNextPlugin()</span>
+
+ <span class="hljs-string">new</span> <span class="hljs-string">Router()</span>
+   <span class="hljs-string">.get('/p/:productId',</span> <span class="hljs-string">({</span> <span class="hljs-string">cache,</span> <span class="hljs-string">proxy</span> <span class="hljs-string">})</span> <span class="hljs-string">=&gt;</span> <span class="hljs-string">{</span>
+     <span class="hljs-string">cache({</span>
+       <span class="hljs-attr">browser:</span> <span class="hljs-string">{</span>
+         <span class="hljs-attr">maxAgeSeconds:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span>
+         <span class="hljs-attr">serviceWorkerSeconds:</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">60</span><span class="hljs-string">,</span> <span class="hljs-string">//</span> <span class="hljs-number">1</span> <span class="hljs-string">hour</span>
+       <span class="hljs-string">},</span>
+       <span class="hljs-attr">edge:</span> <span class="hljs-string">{</span>
+         <span class="hljs-attr">maxAgeSeconds:</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">24</span> <span class="hljs-string">//</span> <span class="hljs-number">24</span> <span class="hljs-string">hours</span>
+         <span class="hljs-attr">staleWhileRevalidateSeconds:</span> <span class="hljs-number">60</span> <span class="hljs-string">*</span> <span class="hljs-number">60</span> <span class="hljs-string">//</span> <span class="hljs-number">1</span> <span class="hljs-string">hour</span>
+       <span class="hljs-string">}</span>
+     <span class="hljs-string">})</span>
+     <span class="hljs-string">proxy('origin')</span>
+   <span class="hljs-string">})</span>
+   <span class="hljs-string">.use(nextMiddleware)</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../interfaces/_router_cacheoptions_.cacheoptions.html" class="tsd-signature-type">CacheOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="proxy" class="tsd-anchor"></a>
+					<h3>proxy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">proxy<span class="tsd-signature-symbol">(</span>backend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.proxy</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Relays the request to the specified backend.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path/with/:variable'</span>, ({<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'legacy'</span>, { path: <span class="hljs-string">'/some/other/path/with/:variable'</span> })
+   })</code></pre><p>In this example, we relay the request to the &quot;legacy&quot; backend. In this case, <code>xdn.config.js</code> must
+								contain a definition for the <code>legacy</code> backend.  For example:</p>
+								<pre><code> <span class="hljs-comment">// xdn.config.js</span>
+
+ <span class="hljs-keyword">module</span>.<span class="hljs-keyword">exports</span> = {
+   backends: {
+     legacy: {
+       domainOrIp: <span class="hljs-string">'legacy.domain.com'</span>,
+       hostHeader: <span class="hljs-string">'domain.com'</span>
+     }
+   }
+ }</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>backend: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The name of one of the backends in your <code>xdn.config.js</code> file.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>A promise the resolves once the response has been fetched from the upstream site.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="redirect" class="tsd-anchor"></a>
+					<h3>redirect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">redirect<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, statusCode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.redirect</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Redirects the browser to a new location.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> <span class="hljs-keyword">new</span> Router()
+   .get(<span class="hljs-string">'/p/:productId'</span>, <span class="hljs-function"><span class="hljs-params">({ redirect })</span> =&gt;</span> {
+     <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">'/products/:productId'</span>, <span class="hljs-number">301</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>to: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The URL to which the browser will be redirected.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> statusCode: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 302</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The HTTP status to return.  Defaults to 301</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="removerequestheader" class="tsd-anchor"></a>
+					<h3>remove<wbr>Request<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Request<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.removeRequestHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a request header.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, async ({ removeRequestHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     removeRequestHeader(<span class="hljs-string">'some-header'</span>)
+     proxy(<span class="hljs-string">'origin'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the request header</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="removeresponsecookie" class="tsd-anchor"></a>
+					<h3>remove<wbr>Response<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Response<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.removeResponseCookie</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a specific <code>set-cookie</code> header from the response.
+									If you wish to remove all such headers use <code>removeHeader</code>.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ removeUpstreamResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     removeUpstreamResponseCookie(<span class="hljs-string">'my-cookie'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the cookie</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="removeresponseheader" class="tsd-anchor"></a>
+					<h3>remove<wbr>Response<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Response<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.removeResponseHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a response header immediately before delivering the response downstream.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ removeResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     removeResponseHeader(<span class="hljs-string">'some-header'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the response header</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="removeupstreamresponsecookie" class="tsd-anchor"></a>
+					<h3>remove<wbr>Upstream<wbr>Response<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Upstream<wbr>Response<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.removeUpstreamResponseCookie</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a specific <code>set-cookie</code> header from the response before attempting to cache the response.
+									If you wish to remove all such headers use <code>removeUpstreamHeader</code>.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ removeUpstreamResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     removeUpstreamResponseCookie(<span class="hljs-string">'my-cookie'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the cookie</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="removeupstreamresponseheader" class="tsd-anchor"></a>
+					<h3>remove<wbr>Upstream<wbr>Response<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Upstream<wbr>Response<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.removeUpstreamResponseHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a response header before attempting to cache the response.
+										In local development this is same as calling <code>updateUpstreamResponseHeader</code> but
+									on edge it removes a header immediately after the upstream fetch has finished.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ removeUpstreamResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     removeUpstreamResponseHeader(HTTP_HEADERS.setCookie)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the response header</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="render" class="tsd-anchor"></a>
+					<h3>render</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span>cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_request_.request.html" class="tsd-signature-type">Request</a>, proxy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>backend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.render</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calls the provided callback to send a response.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cb: <span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_request_.request.html" class="tsd-signature-type">Request</a>, proxy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>backend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Render callback function</p>
+										</div>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_request_.request.html" class="tsd-signature-type">Request</a>, proxy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>backend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>request: <a href="../interfaces/_router_request_.request.html" class="tsd-signature-type">Request</a></h5>
+														</li>
+														<li>
+															<h5>proxy: <span class="tsd-signature-symbol">(</span>backend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+															<ul class="tsd-parameters">
+																<li class="tsd-parameter-signature">
+																	<ul class="tsd-signatures tsd-kind-type-literal">
+																		<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>backend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+																	</ul>
+																	<ul class="tsd-descriptions">
+																		<li class="tsd-description">
+																			<h4 class="tsd-parameters-title">Parameters</h4>
+																			<ul class="tsd-parameters">
+																				<li>
+																					<h5>backend: <span class="tsd-signature-type">string</span></h5>
+																				</li>
+																				<li>
+																					<h5>options: <a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-signature-type">ProxyOptions</a></h5>
+																				</li>
+																			</ul>
+																			<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<h5>params: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="send" class="tsd-anchor"></a>
+					<h3>send</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span>, statusCode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, statusMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.send</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sends content back to client. If content is a string, the respons will be sent
+									directly from the edge. If it is a function, the request will be computed by a JavaScript worker.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> <span class="hljs-keyword">new</span> Router()
+   .get(<span class="hljs-string">'/some/path'</span>, <span class="hljs-function"><span class="hljs-params">({ send })</span> =&gt;</span> {
+     <span class="hljs-keyword">return</span> send(<span class="hljs-string">'&lt;html&gt;&lt;body&gt;Hello World!&lt;/body&gt;&lt;/html&gt;'</span>, <span class="hljs-number">200</span>, <span class="hljs-string">'OK'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The response body as a string</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> statusCode: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 200</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The status to send</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> statusMessage: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The status message to send</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="servestatic" class="tsd-anchor"></a>
+					<h3>serve<wbr>Static</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">serve<wbr>Static<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.serveStatic</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Responds with a static asset from the specified path.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code class="language-js">serveStatic(<span class="hljs-string">'path/to/asset/from/app/root'</span>)</code></pre>
+								<p>You can also use variables in the asset path.  For example, to return files under the <code>assets</code> directory
+								when the url starts with <code>/static</code>:</p>
+								<pre><code> <span class="hljs-keyword">new</span> Router()
+   .get(<span class="hljs-string">'/static/*path'</span>, <span class="hljs-function"><span class="hljs-params">({ serveStatic })</span> =&gt;</span> {
+     serveStatic(<span class="hljs-string">'assets/*path'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The relative path to the asset from the app&#39;s root directory. You can reference path variables using <code>:variable</code>.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>A promise the resolves once the asset has been fetched from storage.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="serviceworker" class="tsd-anchor"></a>
+					<h3>service<wbr>Worker</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">service<wbr>Worker<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.serviceWorker</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the service worker with proper edge and browser cache headers</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The path to the service worker relative to the root directory of your app</p>
+											<p><strong>Example</strong></p>
+											<pre><code class="language-js"> <span class="hljs-keyword">new</span> Router()
+   .get(<span class="hljs-string">'/service-worker.js'</span>, ({ serviceWorker }) =&gt; {
+     <span class="hljs-keyword">return</span> serviceWorker(<span class="hljs-string">'dist/service-worker.js'</span>)
+   })</code></pre>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setrequestheader" class="tsd-anchor"></a>
+					<h3>set<wbr>Request<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Request<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.setRequestHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds or replaces a request header.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ setRequestHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     setRequestHeader(<span class="hljs-string">'some-header'</span>, <span class="hljs-string">'some-value'</span>)
+     proxy(<span class="hljs-string">'origin'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the request header</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The value to set</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setresponseheader" class="tsd-anchor"></a>
+					<h3>set<wbr>Response<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Response<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.setResponseHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds or replaces a response header immediately before delivering the response downstream.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ setResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     setResponseHeader(<span class="hljs-string">'some-header'</span>, <span class="hljs-string">'some-value'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the response header</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The value to set</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setupstreamresponseheader" class="tsd-anchor"></a>
+					<h3>set<wbr>Upstream<wbr>Response<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Upstream<wbr>Response<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.setUpstreamResponseHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds or replaces an upstream response header before attempting to cache the response.
+										In local development this is same as calling <code>setResponseHeader</code> but on edge it adds
+									a header immediately after the upstream fetch has finished.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ setUpstreamResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     setUpstreamResponseHeader(<span class="hljs-string">'x-xdn-surrogate-key'</span>, <span class="hljs-string">'proxy=origin'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the response header</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The value to set</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updaterequestheader" class="tsd-anchor"></a>
+					<h3>update<wbr>Request<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Request<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, match<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span>, replace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.updateRequestHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alters a request header. Use this method to derive the new header value from the existing one.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ updateRequestHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     updateRequestHeader(<span class="hljs-string">'some-header'</span>, /some-.*-part/gi, <span class="hljs-string">'some-replacement'</span>)
+     proxy(<span class="hljs-string">'origin'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the request header</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>match: <span class="tsd-signature-type">RegExp</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Regex to find the part that should be replaced.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>replace: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value that will replace the matched part.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateresponsecookie" class="tsd-anchor"></a>
+					<h3>update<wbr>Response<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Response<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, match<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span>, replace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.updateResponseCookie</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates a <code>set-cookie</code> header in the response. If there are multiple cookies
+									with the same name, all of them will be updated.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ updateUpstreamResponseCookie,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     updateUpstreamResponseCookie(<span class="hljs-string">'my-cookie'</span>, /<span class="hljs-attribute">Domain</span>=.+;/, <span class="hljs-string">'Domain=mydomain.com;'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Case-insensitive name of the cookie to update</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>match: <span class="tsd-signature-type">RegExp</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Regex to find the part that should be replaced.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>replace: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value that will replace the matched part.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateresponseheader" class="tsd-anchor"></a>
+					<h3>update<wbr>Response<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Response<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, match<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span>, replace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.updateResponseHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alters a response header immediately before delivering the response downstream.
+									Use this method to derive the new header value from the existing one.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ updateResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     updateResponseHeader(<span class="hljs-string">'some-header'</span>, /some-.*-part/gi, <span class="hljs-string">'some-replacement'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the response header</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>match: <span class="tsd-signature-type">RegExp</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Regex to find the part that should be replaced.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>replace: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value that will replace the matched part.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateupstreamresponsecookie" class="tsd-anchor"></a>
+					<h3>update<wbr>Upstream<wbr>Response<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Upstream<wbr>Response<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, match<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span>, replace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.updateUpstreamResponseCookie</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates a <code>set-cookie</code> header in the response before attemting to cache the response.
+									If there are multiple cookies with the same name, all of them will be updated.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ updateUpstreamResponseCookie,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     updateUpstreamResponseCookie(<span class="hljs-string">'my-cookie'</span>, /<span class="hljs-attribute">Domain</span>=.+;/, <span class="hljs-string">'Domain=mydomain.com;'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Case-insensitive name of the cookie to update</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>match: <span class="tsd-signature-type">RegExp</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Regex to find the part that should be replaced.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>replace: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value that will replace the matched part.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateupstreamresponseheader" class="tsd-anchor"></a>
+					<h3>update<wbr>Upstream<wbr>Response<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Upstream<wbr>Response<wbr>Header<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, match<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span>, replace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseResponseWriter.updateUpstreamResponseHeader</p>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alters an upstream response header before attempting to cache the response.
+										Use this method to derive the new header value from the existing one.
+										In local development this is same as calling <code>updateResponseHeader</code> but on
+									edge it updates a header immediately after the upstream fetch has finished.</p>
+								</div>
+								<p><strong>Example</strong></p>
+								<pre><code> new Router()
+   .<span class="hljs-builtin-name">get</span>(<span class="hljs-string">'/some/path'</span>, ({ updateUpstreamResponseHeader,<span class="hljs-built_in"> proxy </span>}) =&gt; {
+     proxy(<span class="hljs-string">'origin'</span>)
+     updateUpstreamResponseHeader(<span class="hljs-string">'cache-control'</span>, /public/gi, <span class="hljs-string">'private'</span>)
+   })</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The case-insensitive name of the response header</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>match: <span class="tsd-signature-type">RegExp</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Regex to find the part that should be replaced.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>replace: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value that will replace the matched part.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_config_.html">&quot;config&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_deploy_deploymentbuilder_.html">&quot;deploy/<wbr>Deployment<wbr>Builder&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_deploy_index_.html">&quot;deploy/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_deploy_resolveinpackage_.html">&quot;deploy/resolve<wbr>InPackage&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_cacheoptions_.html">&quot;router/<wbr>Cache<wbr>Options&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_customcachekey_.html">&quot;router/<wbr>Custom<wbr>Cache<wbr>Key&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_request_.html">&quot;router/<wbr>Request&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_response_.html">&quot;router/<wbr>Response&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_router_responsewriter_.html">&quot;router/<wbr>Response<wbr>Writer&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_router_.html">&quot;router/<wbr>Router&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_router_index_.html">&quot;router/index&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_router_responsewriter_.responsewriter.html" class="tsd-kind-icon">Response<wbr>Writer</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_router_responsewriter_.responsewriter.html#request" class="tsd-kind-icon">request</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_router_responsewriter_.responsewriter.html#response" class="tsd-kind-icon">response</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_router_responsewriter_.responsewriter.html#route" class="tsd-kind-icon">route</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#addresponsecookie" class="tsd-kind-icon">add<wbr>Response<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#addupstreamresponsecookie" class="tsd-kind-icon">add<wbr>Upstream<wbr>Response<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#allowcors" class="tsd-kind-icon">allow<wbr>Cors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#cache" class="tsd-kind-icon">cache</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#proxy" class="tsd-kind-icon">proxy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#redirect" class="tsd-kind-icon">redirect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#removerequestheader" class="tsd-kind-icon">remove<wbr>Request<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#removeresponsecookie" class="tsd-kind-icon">remove<wbr>Response<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#removeresponseheader" class="tsd-kind-icon">remove<wbr>Response<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#removeupstreamresponsecookie" class="tsd-kind-icon">remove<wbr>Upstream<wbr>Response<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#removeupstreamresponseheader" class="tsd-kind-icon">remove<wbr>Upstream<wbr>Response<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#render" class="tsd-kind-icon">render</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#send" class="tsd-kind-icon">send</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#servestatic" class="tsd-kind-icon">serve<wbr>Static</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#serviceworker" class="tsd-kind-icon">service<wbr>Worker</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#setrequestheader" class="tsd-kind-icon">set<wbr>Request<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#setresponseheader" class="tsd-kind-icon">set<wbr>Response<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#setupstreamresponseheader" class="tsd-kind-icon">set<wbr>Upstream<wbr>Response<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#updaterequestheader" class="tsd-kind-icon">update<wbr>Request<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#updateresponsecookie" class="tsd-kind-icon">update<wbr>Response<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#updateresponseheader" class="tsd-kind-icon">update<wbr>Response<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#updateupstreamresponsecookie" class="tsd-kind-icon">update<wbr>Upstream<wbr>Response<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_router_responsewriter_.responsewriter.html#updateupstreamresponseheader" class="tsd-kind-icon">update<wbr>Upstream<wbr>Response<wbr>Header</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_router_responsewriter_.corsoptions.html" class="tsd-kind-icon">Cors<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_router_responsewriter_.proxyoptions.html" class="tsd-kind-icon">Proxy<wbr>Options</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
