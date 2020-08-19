@@ -49,9 +49,9 @@ Here are some of common types of page content that may need this approach:
 
 Next install the XDN JavaScript libraries to your site by adding the following to your site's HTML:
 
-```
-    <script src="/__xdn__/cache-manifest.js" defer="defer"></script>
-    <script src="/main.js" defer="defer"></script>
+```html
+<script src="/__xdn__/cache-manifest.js" defer="defer"></script>
+<script src="/main.js" defer="defer"></script>
 ```
 
 These tags power the predictive prefetching and caching that will be used by the XDN. Note that the JavaScript assets referenced in the above script tags are not on your server. The XDN server the assets for these script tags once the XDN is installed in front of your server as described in [How XDN Starter works](#section_how_xdn_starter_works).
@@ -68,7 +68,7 @@ npm i -g @xdn/cli
 
 Create your Starter project using the XDN's create module:
 
-```
+```bash
 npm create xdn-app@latest
 ```
 
@@ -81,7 +81,7 @@ The XDN create module will prompt you for the following information:
 
 Here's an example output from running XDN create:
 
-```
+```bash
 $ npm create xdn-app@latest
 npx: installed 170 in 10.375s
 ✔ Enter a name for your app … my-starter-app
@@ -209,6 +209,8 @@ Each of these steps is described in more detail in the [Production guide](produc
 
 ## Advanced Prefetching Techniques
 
+An introduction to prefetching is available in the [Prefetching guide](prefetching). In addition, here are some techniques to take full advantage of the power of prefetching. 
+
 ### Deep Fetching
 
 By default, only HTML content is prefetched. In order to achieve truly instant page transitions, all of the assets needed to render the content that appears above the fold need to be prefetched. These typically include images, CSS, and JavaScript.
@@ -242,7 +244,6 @@ import { Prefetcher, prefetch } from '@xdn/prefetch/sw'
 import DeepFetchPlugin, { DeepFetchCallbackParam } from '@xdn/prefetch/sw/DeepFetchPlugin'
 
 new Prefetcher({
-  cacheHost,
   plugins: [
     new DeepFetchPlugin([
       {
@@ -343,3 +344,30 @@ export default new Router()
   })
 ```
 
+### Prefetching based on element visibility
+
+By default, `<a>` tags are watched by the Prefetcher so that the value of their `href` attributes are prefetched once the links become visible in the viewport. However, sometimes you might need to trigger a prefetch based on the visibility of other types of elements.
+ 
+When installing the service worker, you can specify a `watch` list. Elements that match `watch` selectors can trigger a callback function when they become visible in the viewport:
+
+```js
+import { install, prefetch } from '@xdn/prefetch/window'
+
+document.addEventListener('DOMContentLoaded', function() {
+  install({
+    // If you don't have links specified with a `<a>` tags with `href` attributes, you can also
+    // specify watchers to prefetch when other elements are added to the page:
+    watch: [
+      {
+        selector: 'div.product-tile',
+        callback: el => {
+          const productId = el.getAttribute('data-product-id')
+          const catId = document.getElementById('cat-listing').getAttribute('data-category-id')
+          prefetch(`/api/${catId}/${productId}`, 'fetch')
+        },
+      },
+    ],
+  })
+})
+```
+ 
